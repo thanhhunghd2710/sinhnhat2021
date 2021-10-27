@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Happy BirthDay</title>
+</head>
+<style type="text/css">
+h1{
+	margin-top: -2%;
+	text-align: center;
+	color: white;
+	font-size: 5rem;
+	font-family: monospace;
+	//text-shadow: 5px 5px 10px black;
+	text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(255, 255, 255, 0.2);
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url('anh/backgr.gif') no-repeat ;
+	background-size: cover;
+	backdrop-filter: blur(20px);
+}
+.nhacnen{
+	//display: none;
+}
+#banhsn{
+	
+	width: 40%;
+	text-shadow: 5px 5px 10px black;
+}
+.theanh{
+	text-align: center;
+}
+#dotnen{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+}
+#btn1{
+	position: fixed;
+	z-index: 3;
+}
+#phao{
+	position: absolute;
+}
+#phao1{
+	position: absolute;
+	transform: rotateY(180deg);
+	left: -10%;
+}
+.bt{
+	color: white;
+	left: 3%;
+}
+.background{
+	background: url('anh/anhnengif1.gif') no-repeat ;
+	background-size: cover;
+z-index: 2;
+}
+
+
+	
+</style>
+<body>
+	<div class="background">
+		<audio controls autoplay>
+    		<source src="music/hpbdb.mp3" type="audio/mpeg">
+    		
+		</audio>
+		
+		<audio controls autoplay>
+    		<source src="music/hpbdl.mp3">
+    		
+		</audio><br>
+		<label class="bt" id="btn1" > TẮT NẾN</label>
+		<!-- <input type="button" class="bt" id="btn1" value="TẮT NẾN"/> -->
+		<br>
+        <!-- <input type="button" class="bt"id="btn2" value="ĐỐT NẾN"/> -->
+        <label class="bt" id="btn2" > ĐỐT NẾN</label>
+		<h1>HAPPY BIRTHDAY!!!</h1>
+		<img src="anh/phao1.png" id="phao1" width="40%">
+			<div id="content" >
+         		 <img src="anh/hpbd.gif" id="dotnen">
+        	</div>
+        	<div class="theanh"><img src="anh/banhsn.png" id="banhsn">
+        		<img src="anh/phao.png" id="phao" width="40%">
+   		</div><br><br><br><br><br><br><br><br><br>
+
+   	
+
+		
+        
+ 
+        <script language="javascript">
+        	window.onload = function()
+			{
+  				document.getElementById("content").style.display = 'none';
+  				document.getElementById("btn1").style.display = 'none';
+			};
+        	
+  			
+            document.getElementById("btn1").onclick = function () {
+                document.getElementById("content").style.display = 'none';
+                document.getElementById("btn1").style.display = 'none';
+                document.getElementById("btn2").style.display = 'block';
+            };
+ 
+            document.getElementById("btn2").onclick = function () {
+                document.getElementById("content").style.display = 'block';
+                document.getElementById("btn1").style.display = 'block';
+                document.getElementById("btn2").style.display = 'none';
+            };
+ 
+        </script>
+	</div>
+</body>
+</html>
